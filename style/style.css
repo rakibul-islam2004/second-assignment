@@ -876,7 +876,7 @@ hr {
     }
 }
 
-@media screen and (min-width: 801px) and (min-width: 1200px){
+@media screen and (min-width: 801px) and (max-width: 1200px){
     .contents {
         width: 52%;
         margin-top: 70px;
