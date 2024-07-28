@@ -122,15 +122,21 @@ button {
 
 }
 
-.image {
+.banner .image {
     width: 32%;
     height: 580px;
     margin-top: 39.5px;
     margin-right: 26px;
+    position: relative;
 }
-
+.small-workout,.small-tutorial{
+    position: absolute;  
+}
+.small-workout,.small-tutorial{
+    display: none;
+}
 .tutorial,
-.workout {
+.workout,.small-workout,.small-tutorial {
     color: #fff;
     height: 92px;
     width: 193px;
@@ -151,7 +157,7 @@ button {
     background-color: #E6533C;
 }
 
-.tutorial {
+.tutorial ,.small-tutorial{
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -407,7 +413,7 @@ main {
     line-height: 24px;
 }
 
-/* calcolator */
+/* calculator */
 .calculator {
     display: flex;
     width: 100%;
@@ -682,6 +688,16 @@ hr {
     .workout {
         display: none;
     }
+    .small-workout{
+        display: block;
+        top: 20%;
+        left: 45%;
+    }
+    .small-tutorial{
+        display: flex;
+        top: 78%;
+        left: 10%;
+    }
 
     header {
         height: auto;
@@ -742,6 +758,9 @@ hr {
         line-height: 40px;
         padding-right: 50px;
     }
+    .run button{
+        width: 100%;
+    }
 
     .run img {
         width: 80%;
@@ -788,6 +807,9 @@ hr {
     }
 
     .calculate {
+        width: 100%;
+    }
+    .calculate button{
         width: 100%;
     }
 
@@ -854,7 +876,7 @@ hr {
     }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 801px){
+@media screen and (min-width: 801px) and (min-width: 1200px){
     .contents {
         width: 52%;
         margin-top: 70px;
