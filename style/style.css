@@ -132,9 +132,6 @@ button {
 .small-workout,.small-tutorial{
     position: absolute;  
 }
-.small-workout,.small-tutorial{
-    display: none;
-}
 .tutorial,
 .workout,.small-workout,.small-tutorial {
     color: #fff;
@@ -172,6 +169,9 @@ button {
 .tutorial {
     top: 580px;
     right: 30%;
+}
+.small-workout,.small-tutorial{
+    display: none;
 }
 
 /* cards */
